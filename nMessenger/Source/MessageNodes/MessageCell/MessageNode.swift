@@ -195,7 +195,7 @@ open class MessageNode: GeneralMessengerCell {
             
             let width = constrainedSize.max.width - tmpSizeMeasure.size.width - self.cellPadding.left - self.cellPadding.right - avatarInsets.left - avatarInsets.right - self.messageOffset
 
-            contentNode?.style.maxWidth = ASDimension(unit: .points, value: width * (2/3))
+            contentNode?.style.maxWidth = ASDimension(unit: .points, value: width * (4/5))
             contentNode?.style.maxHeight = ASDimension(unit: .points, value: 100000)
             
             let contentSizeLayout = ASAbsoluteLayoutSpec()
@@ -211,7 +211,7 @@ open class MessageNode: GeneralMessengerCell {
         } else {
             let width = constrainedSize.max.width - self.cellPadding.left - self.cellPadding.right - self.messageOffset
         
-            contentNode?.style.maxWidth = ASDimension(unit: .points, value: width * (2/3))
+            contentNode?.style.maxWidth = ASDimension(unit: .points, value: width * (4/5))
             contentNode?.style.maxHeight = ASDimension(unit: .points, value: 100000)
         
             contentNode?.style.flexGrow = 1
