@@ -287,7 +287,10 @@ open class CollectionViewContentNode: ContentNode,ASCollectionDelegate,ASCollect
      Implementing constrainedSizeForNodeAtIndexPath the size of each cell
      */
     open func collectionView(_ collectionView: ASCollectionView, constrainedSizeForNodeAt indexPath: IndexPath) -> ASSizeRange {
-        return ASSizeRangeMake(cellSize, cellSize);
+        guard let node = self.collectionNodesDataSource?[(indexPath as NSIndexPath).row] else {
+            return ASSizeRangeMake(cellSize, cellSize)
+        }
+        return ASSizeRangeMake(node.style.preferredSize, node.style.preferredSize)
     }
     
     // MARK: UICollectionViewDelegateFlowLayout
