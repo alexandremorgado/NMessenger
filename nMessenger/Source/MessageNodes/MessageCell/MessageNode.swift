@@ -185,8 +185,8 @@ open class MessageNode: GeneralMessengerCell {
             contentNode?.style.maxWidth = ASDimension(unit: .points, value: width * self.maxWidthRatio)
             contentNode?.style.maxHeight = ASDimension(unit: .points, value: self.maxHeight)
         
-            contentNode?.style.maxWidth = ASDimension(unit: .points, value: width * (4/5))
-            contentNode?.style.maxHeight = ASDimension(unit: .points, value: 100000)
+            contentNode?.style.maxWidth = ASDimension(unit: .points, value: width * self.maxWidthRatio)
+            contentNode?.style.maxHeight = ASDimension(unit: .points, value: self.maxHeight)
         
             contentNode?.style.flexGrow = 1
         
