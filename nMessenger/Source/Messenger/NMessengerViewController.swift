@@ -114,7 +114,7 @@ open class NMessengerViewController: UIViewController, UITextViewDelegate, NMess
      */
     override open func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.white
+//        self.view.backgroundColor = UIColor.white
         //load views
         loadMessengerView()
         loadInputView()

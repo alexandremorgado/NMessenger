@@ -29,7 +29,7 @@ open class CollectionViewContentNode: ContentNode,ASCollectionDelegate,ASCollect
     
     // MARK: Private Variables
     /** ASCollectionNode as the content of the cell*/
-    fileprivate var collectionViewMessageNode:ASCollectionNode = ASCollectionNode(collectionViewLayout: UICollectionViewFlowLayout())
+    var collectionViewMessageNode:ASCollectionNode = ASCollectionNode(collectionViewLayout: UICollectionViewFlowLayout())
     /** [ASDisplayNode] as the posibble data of the cell*/
     fileprivate var collectionViewsDataSource: [ASDisplayNode]?
     /** [UIView] as the posibble data of the cell*/
@@ -113,7 +113,7 @@ open class CollectionViewContentNode: ContentNode,ASCollectionDelegate,ASCollect
         flowLayout.minimumInteritemSpacing = spacingBetweenCells
         flowLayout.minimumLineSpacing = spacingBetweenRows
         self.collectionViewMessageNode = ASCollectionNode(collectionViewLayout: flowLayout)
-        self.collectionViewMessageNode.backgroundColor = UIColor.white
+        self.collectionViewMessageNode.backgroundColor = UIColor.clear
         
         self.collectionViewMessageNode.accessibilityIdentifier = "CollectionViewWithCustomViews"
         
@@ -142,7 +142,7 @@ open class CollectionViewContentNode: ContentNode,ASCollectionDelegate,ASCollect
         flowLayout.minimumInteritemSpacing = spacingBetweenCells
         flowLayout.minimumLineSpacing = spacingBetweenRows
         self.collectionViewMessageNode = ASCollectionNode(collectionViewLayout: flowLayout)
-        self.collectionViewMessageNode.backgroundColor = UIColor.white
+        self.collectionViewMessageNode.backgroundColor = UIColor.clear
 
         self.collectionViewMessageNode.accessibilityIdentifier = "CollectionViewWithCustomNodes"
         self.addSubnode(collectionViewMessageNode)
