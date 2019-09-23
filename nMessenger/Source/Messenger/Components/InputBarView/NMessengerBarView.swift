@@ -104,7 +104,7 @@ open class NMessengerBarView: InputBarView, UITextViewDelegate, CameraViewDelega
      */
     open func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
         textView.text = ""
-        textView.textColor = UIColor.n1DarkestGreyColor()
+        textView.textColor = ColorCompatibility.systemGray
         UIView.animate(withDuration: 0.1, animations: {
             self.sendButton.isEnabled = true
         }) 

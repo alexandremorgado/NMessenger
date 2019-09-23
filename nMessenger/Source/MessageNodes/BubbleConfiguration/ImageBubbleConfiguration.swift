@@ -20,12 +20,12 @@ open class ImageBubbleConfiguration: BubbleConfigurationProtocol {
     
     open func getIncomingColor() -> UIColor
     {
-        return UIColor.n1PaleGreyColor()
+        return ColorCompatibility.systemGray2
     }
     
     open func getOutgoingColor() -> UIColor
     {
-        return UIColor.n1ActionBlueColor()
+        return ColorCompatibility.systemGray2
     }
     
     open func getBubble() -> Bubble

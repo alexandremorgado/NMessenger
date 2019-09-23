@@ -20,12 +20,12 @@ open class SimpleBubbleConfiguration: BubbleConfigurationProtocol {
     
     open func getIncomingColor() -> UIColor
     {
-        return UIColor.n1PaleGreyColor()
+        return ColorCompatibility.systemGroupedBackground
     }
     
     open func getOutgoingColor() -> UIColor
     {
-        return UIColor.n1MidGreyColor()
+        return ColorCompatibility.systemGray4
     }
     
     open func getBubble() -> Bubble

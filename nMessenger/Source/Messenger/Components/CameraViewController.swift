@@ -8,6 +8,7 @@
 // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
+import UIKit
 import Foundation
 import Photos
 import AVFoundation
@@ -359,7 +360,7 @@ open class CameraViewController: UIImagePickerController, UIImagePickerControlle
      */
     @objc open func toggleFlash(_ sender: UIButton) {
         if (sender.isSelected == false) {
-            sender.tintColor = UIColor.n1ActionBlueColor()
+            sender.tintColor = ColorCompatibility.systemBlue
             sender.isSelected = true
         } else {
             sender.tintColor = UIColor.white
@@ -382,7 +383,7 @@ open class CameraViewController: UIImagePickerController, UIImagePickerControlle
      */
     @objc open func flipCamera(_ sender: UIButton) {
         if (sender.isSelected == false) {
-            sender.tintColor = UIColor.n1ActionBlueColor()
+            sender.tintColor = ColorCompatibility.systemBlue
             sender.isSelected = true
         } else {
             sender.tintColor = UIColor.white

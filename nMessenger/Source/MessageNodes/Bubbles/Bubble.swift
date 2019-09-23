@@ -19,7 +19,7 @@ import AsyncDisplayKit
 open class Bubble {
     
     // MARK: Public Parameters
-    open var bubbleColor : UIColor = UIColor.n1PaleGreyColor()
+    open var bubbleColor : UIColor = ColorCompatibility.systemGroupedBackground
     
     /** When this is set, the layer mask will mask the ContentNode.*/
     open var hasLayerMask = false

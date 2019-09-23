@@ -38,13 +38,13 @@ open class TextContentNode: ContentNode,ASTextNodeDelegate {
         }
     }
     /** UIColor for incoming text messages*/
-    open var incomingTextColor = UIColor.n1DarkestGreyColor() {
+    open var incomingTextColor = ColorCompatibility.systemGray {
         didSet {
             self.updateAttributedText()
         }
     }
     /** UIColor for outgoinf text messages*/
-    open var outgoingTextColor = UIColor.n1WhiteColor() {
+    open var outgoingTextColor = ColorCompatibility.systemGray3 {
         didSet {
             self.updateAttributedText()
         }
