@@ -432,6 +432,7 @@ open class CameraViewController: UIImagePickerController, UIImagePickerControlle
             switch status {
                 case .authorized: completion(true)
                 case .denied, .notDetermined, .restricted : completion(false)
+                default: completion(true)
             }
         }
     }
